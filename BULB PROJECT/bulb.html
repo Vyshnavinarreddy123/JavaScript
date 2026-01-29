@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Button tutorial </title>
+</head>
+<body>
+	<h1> <center> Bulb lesson </center></h1>
+	<p> Hi this is all about what is happening in this page.
+	<ol>
+	<li> Down you can see a button "POWER ON"</li>	
+	<li> If you click on that button you can on the bulb </li>
+	<li> Down you can see a button "POWER OFF"</li>
+	<li> If you click on that button you can off the bulb </li>
+	</ol>
+	<img id ="bulb" src="off_bulb.png" alt="bulb pic" height="150" width="150"></img>
+	<button
+		type='button'
+		onclick='turnOn()'>
+		POWER ON
+	</button>
+	<button
+		type='button'
+		onclick='turnOff()'>
+		POWER OFF
+	</button>
+
+	<script>
+			function turnOn()
+			{
+				document.getElementById("bulb").src="on_bulb.png";
+			}
+			
+			function turnOff()
+			{
+				document.getElementById("bulb").src="off_bulb.png";
+			}
+	</script>
+	
+</body>
+</html>
