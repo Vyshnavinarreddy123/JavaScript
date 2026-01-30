@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Hide and show text tutorial </title>
+	<style>
+	h1
+	{
+		color:red;
+	}
+	p
+	{
+		color:blue;
+	}
+	</style>
+</head>
+<body>
+	<h1><center> Hide / Show </center></h1>
+	<p> RULES TO BE FOLLOWED: </p>
+	<ol>
+	<li> Click on DISPLAY TEXT to display text </li>
+	<li> Click on HIDE TEXT to hide text </li>
+	</ol>
+	<p id="text" style="display:none;"> WELCOME TO THIS TUTORIAL </p>
+	<button
+		type='button'
+		onclick='displayText()'>
+	DISPLAY TEXT 
+	</button>
+
+	<button
+		type='button'
+		onclick='hideText()'>
+	HIDE TEXT 
+	</button>
+	
+	<button
+		type='button'
+		onclick="window.print()"> PRINT
+	</button>
+	<script>
+			function displayText()
+			{
+				document.getElementById('text').style.display='block';
+			}
+			function hideText()
+			{
+				document.getElementById('text').style.display='none';
+			}
+	</script>				
+</body>
+</html>
